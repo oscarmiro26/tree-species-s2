@@ -1,0 +1,9 @@
+
+/s2/
+test_filenames.lst
+train_filenames.lst
+
+treeSatAI_Sentinel-2_Tree-Species.zip
+
+*.out
+*.sh
