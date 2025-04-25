@@ -32,7 +32,7 @@ def gather_data(split_files, resolution):
     Returns X (n_samples x n_bands), y (n_samples labels).
     """
     species_map = {}
-    paths = get_paths_for_split(split_files, "s2", resolution)
+    paths = get_paths_for_split(split_files, resolution)   # drop the extra "s2"
     for p in paths:
         sp = parse_species(os.path.basename(p))
         species_map.setdefault(sp, []).append(p)
